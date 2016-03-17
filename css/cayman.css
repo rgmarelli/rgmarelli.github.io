@@ -17,13 +17,11 @@ a {
 
 .btn {
   display: inline-block;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0.3rem;
+  border-style: none;
+  font-size: 2.9rem;
+  padding: 0.0rem 0.5rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
   .btn:hover {
     color: rgba(255, 255, 255, 0.8);
@@ -32,22 +30,6 @@ a {
     border-color: rgba(255, 255, 255, 0.3); }
   .btn + .btn {
     margin-left: 1rem; }
-  @media screen and (min-width: 64em) {
-    .btn {
-      padding: 0.75rem 1rem; } }
-  @media screen and (min-width: 42em) and (max-width: 64em) {
-    .btn {
-      padding: 0.6rem 0.9rem;
-      font-size: 0.9rem; } }
-  @media screen and (max-width: 42em) {
-    .btn {
-      display: block;
-      width: 100%;
-      padding: 0.75rem;
-      font-size: 0.9rem; }
-      .btn + .btn {
-        margin-top: 1rem;
-        margin-left: 0; } }
 
 .page-header {
   color: #fff;
@@ -56,13 +38,13 @@ a {
   background-image: linear-gradient(120deg, #005C97, #363795); }
   @media screen and (min-width: 64em) {
     .page-header {
-      padding: 5rem 6rem; } }
+      padding: 2rem 6rem; } }
   @media screen and (min-width: 42em) and (max-width: 64em) {
     .page-header {
-      padding: 3rem 4rem; } }
+      padding: 2rem 4rem; } }
   @media screen and (max-width: 42em) {
     .page-header {
-      padding: 2rem 1rem; } }
+      padding: 1rem 1rem; } }
 
 .project-name {
   margin-top: 0;
@@ -78,7 +60,7 @@ a {
       font-size: 1.75rem; } }
 
 .project-tagline {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-weight: normal;
   opacity: 0.7; }
   @media screen and (min-width: 64em) {
