@@ -1,1 +1,25 @@
-Hello World
+---
+layout: default
+title: {{ site.name }}
+---
+
+<div id="home">
+  <h1>About</h1>
+  <p>Over the last ten years, I’ve been developing, testing, stressing, and having fun with high performance and fault tolerant distributed systems; applying the right tool for every particular situation: an optimized code with C++ or small but powerful python programs, the beauty in java concurrency package, troubleshooting the network with tcpdump. Agile planning and leading, encouraging people to grow and develop new skills. And I'm fascinated by (and love to hear) bright, original ideas.</p>
+
+  <p>I like researching new technologies, writing white papers and pushing technical standards to their limits. I'm about to defend my degree thesis about simulation of wireless sensor networks which are a fundamental part of the revolution of the "Internet of Things". Meanwhile, I teach my specialty at the engineering school of the University of Buenos Aires.</p>
+
+  <hr />
+
+  <h1>Thoughts</h1>
+    {% for post in site.posts %}
+      <p>{{ post.date | date_to_string }} &raquo; <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p><blockquote> {{ post.excerpt | truncatewords:25 }}</blockquote>
+    {% endfor %}
+
+  <hr />
+
+  <h1>Projects</h1>
+    <ul class="posts">
+      <li><span><a href="https://rgmarelli.github.io/devs-tossim">DEVS-TOSSIM</a>: A DEVS framework for simulation of TinyOS wireless sensor networks</span></li>
+    </ul>
+</div>
