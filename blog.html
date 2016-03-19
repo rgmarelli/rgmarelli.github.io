@@ -7,8 +7,12 @@ title: {{ site.name }}
 
   <h1>Thoughts</h1>
     {% for post in site.posts %}
-      <p>{{ post.date | date_to_string }} &raquo; <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p><blockquote> {{ post.excerpt | truncatewords:25 }}</blockquote>
+      <div class="postsummary">
+          <h2>{{ post.title }}</h2>
+          <p class="postdate">{{ post.date | date_to_string }}</p>
+          <p> {{ post.excerpt | truncatewords:25 }}</p>
+          <p><a class="morebtn" href="{{ post.url | prepend: site.baseurl }}">read more</a></p>
+      </div>
     {% endfor %}
-
 
 </div>
