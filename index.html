@@ -9,17 +9,20 @@ title: {{ site.name }}
 
   <p>I like researching new technologies, writing white papers and pushing technical standards to their limits. I'm about to defend my degree thesis about simulation of wireless sensor networks which are a fundamental part of the revolution of the "Internet of Things". Meanwhile, I teach my specialty at the engineering school of the University of Buenos Aires.</p>
 
-  <hr />
+  <hr class="sep" />
 
   <h1>Thoughts</h1>
-    {% for post in site.posts %}
+    {% for post in site.posts limit:2 %}
       <p>{{ post.date | date_to_string }} &raquo; <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p><blockquote> {{ post.excerpt | truncatewords:25 }}</blockquote>
     {% endfor %}
 
-  <hr />
+  <p><center><a href="/blog.html">view all</a></center></p>
+
+  <hr class="sep" />
 
   <h1>Projects</h1>
     <ul class="posts">
       <li><span><a href="https://rgmarelli.github.io/devs-tossim">DEVS-TOSSIM</a>: A DEVS framework for simulation of TinyOS wireless sensor networks</span></li>
     </ul>
+
 </div>

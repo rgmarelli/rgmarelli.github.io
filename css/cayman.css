@@ -255,3 +255,11 @@ a {
 .nav ul li a:hover {
   color:Wheat  ;
 }
+
+hr.sep {
+   text-align:center; margin: 0 auto;
+   width: 25%;
+   border-top: 5px double #eff0f1;
+   border-bottom: none;
+   background-color: transparent;
+}
