@@ -11,23 +11,28 @@ title: {{ site.name }}
 
   <hr class="sep" />
 
+  <h1>Projects</h1>
+  <div class="projectsummary">
+      <i class="fa fa-code-fork" aria-hidden="true">&nbsp;</i>
+      <strong><a href="https://rgmarelli.github.io/devs-tossim">DEVS-TOSSIM</a></strong>: A DEVS framework for simulation of TinyOS wireless sensor networks
+  </div>
+  <div class="projectsummary">
+      <i class="fa fa-code-fork" aria-hidden="true">&nbsp;</i>
+      <strong><a href="https://github.com/rgmarelli/devscpp">devsCPP</a></strong>: a C++ library for the Discrete Event System Specification (DEVS)
+  </div>
+
+  <hr class="sep" />
+
   <h1>Thoughts</h1>
     {% for post in site.posts limit:2 %}
       <div class="postsummary">
-          <h2>{{ post.title }}</h2>
-          <p class="postdate">{{ post.date | date_to_string }}</p>
+          <h3>{{ post.title }}</h3>
+          <!--<p class="postdate">{{ post.date | date_to_string }}</p>-->
           <p> {{ post.excerpt | truncatewords:25 }}</p>
           <p><a class="morebtn" href="{{ post.url | prepend: site.baseurl }}">read more</a></p>
       </div>
     {% endfor %}
 
   <p><center><a href="/blog.html">view all</a></center></p>
-
-  <hr class="sep" />
-
-  <h1>Projects</h1>
-    <ul class="posts">
-      <li><span><a href="https://rgmarelli.github.io/devs-tossim">DEVS-TOSSIM</a>: A DEVS framework for simulation of TinyOS wireless sensor networks</span></li>
-    </ul>
 
 </div>

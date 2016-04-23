@@ -285,6 +285,15 @@ hr.sep {
     text-decoration: none;
 }
 
+.projectsummary {
+  border: solid 1px #dce6f0;
+  border-radius: 20em 20em;
+  background-color: #fcfcfc; 
+  background-image: linear-gradient(90deg,#ececec, #fcfcfc);
+  margin: 1.0rem 1.0rem 1.0rem 1.0rem;
+  padding: 0.5rem 0.5rem 0.5rem 1.0rem;
+}
+
 .postsummary {
   border: solid 1px #dce6f0;
   border-radius: 1em 1em;
@@ -293,14 +302,16 @@ hr.sep {
   padding: 0.5rem 0.5rem;
 }
 
-.postsummary h2 {
+.postsummary h3 {
   text-align: left;
+  text-transform: none;
   color: #000000;
 }
 
 .postsummary .postdate {
   font-style: italic;
-  font-weight: bold;
+  font-weight: normal;
+  color: #000000;
 }
 
 .postnav {
