@@ -7,7 +7,7 @@ title: {{ site.name }}
   <h1>About</h1>
   <p>Over the last ten years, I’ve been developing, testing, stressing, and having fun with high performance and fault tolerant distributed systems; applying the right tool for every particular situation: an optimized code with C++ or small but powerful python programs, the beauty in java concurrency package, troubleshooting the network with tcpdump. Agile planning and leading, encouraging people to grow and develop new skills. And I'm fascinated by (and love to hear) bright, original ideas.</p>
 
-  <p>I like researching new technologies, writing white papers and pushing technical standards to their limits. I have a degree in Computer Engineering and I teach my specialty at the engineering school of the University of Buenos Aires.</p>
+  <p>I like researching new technologies, writing white papers and pushing technical standards to their limits. I have a degree in computer engineering and I teach my specialty at the engineering school of the University of Buenos Aires.</p>
 
   <hr class="sep" />
 
@@ -26,10 +26,9 @@ title: {{ site.name }}
   <h1>Thoughts</h1>
     {% for post in site.posts limit:2 %}
       <div class="postsummary">
-          <h3>{{ post.title }}</h3>
+          <strong><a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></strong>
           <!--<p class="postdate">{{ post.date | date_to_string }}</p>-->
-          <p> {{ post.excerpt | truncatewords:25 }}</p>
-          <p><a class="morebtn" href="{{ post.url | prepend: site.baseurl }}">read more</a></p>
+          <p> {{ post.excerpt | truncatewords:20 }}</p>
       </div>
     {% endfor %}
 
